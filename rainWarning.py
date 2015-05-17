@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Sun May 17 15:06:47 2015
@@ -20,14 +21,14 @@ def takeUmbrella(apiKey, lattitude, longitude):
 # read configuration file
 config = configparser.ConfigParser()
 config.read('.config')
-rainNowOut = config['piConfig']['rainNowOut']
-rainLaterOut = config['piConfig']['rainLaterOut']
+rainNowOut = int(config['piConfig']['rainNowOut'])
+rainLaterOut = int(config['piConfig']['rainLaterOut'])
 apiKey = config['forecast.io']['apiKey']
-lattitude = config['forecast.io']['lattitude']
-longitude = config['forecast.io']['longitude']
+lattitude = float(config['forecast.io']['lattitude'])
+longitude = float(config['forecast.io']['longitude'])
 
 # setup GPIO outputs
-GPIO.setmode(GPIO.BMD)
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(rainNowOut, GPIO.OUT)
 GPIO.setup(rainLaterOut, GPIO.OUT)
 
