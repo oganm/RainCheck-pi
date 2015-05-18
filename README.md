@@ -1,6 +1,6 @@
 # RainCheck-pi
 
-Warns you to get an umbrella if it is likely to rain that day. Uses [forecast.io](http://forecast.io/) to get forecast information.
+Your raspberry pi warns to get an umbrella on a rainy day. Uses [forecast.io](http://forecast.io/) to get forecast information.
 
 To use it, get a free API key from [here](https://developer.forecast.io/) that allows for a 1000 querries per day. This will use about 48 per day. Use the remaining ones as you wish.
 
