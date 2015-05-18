@@ -11,7 +11,7 @@ Fill the required information to `.config` file. Obama's config file would look 
 [forecast.io]
 lattitude = 38.8977
 longitude = 77.0366
-apikey = yourAPIKey
+apikey = presidentialKey
 
 [piConfig]
 rainlaterout = 12
