@@ -19,6 +19,8 @@ rainnowout = 20
 ```
 `rainlaterout` will be turned on if it is likely to rain anytime that day while (p>0.4) `rainnowout` will be turned on if it is raining right now.
 
+You also need the forecast.io API wrapper by [ZeevG](https://github.com/ZeevG/python-forecast.io). Just do `pip-3.2 install python-forecastio`. pip's name might change depending on your installation method.
+
 to run, after filling the config file, do
 ```
 cd RainCheck-pi
